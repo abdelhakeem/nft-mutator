@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+    @apply bg-back h-screen;
+}
+
+.gradient-border-wrap {
+    background: linear-gradient(to right, #7C1DC1, #EB54BC, #67D8DE, #02DC85, #FCD757);
+}
+
+.wallet-button-parent Button {
+    @apply text-white bg-turquoise rounded-lg font-roboto;
+}
+
+.wallet-button-parent Button:hover {
+    @apply bg-pacific !important;
+}
