@@ -9,7 +9,7 @@ type LayoutProps = {
 const Layout = ({children}: LayoutProps) => {
     return (
         <WalletContextProvider>
-            <div className="mx-16">
+            <div>
                 <Navbar></Navbar>
                 {children}
             </div>

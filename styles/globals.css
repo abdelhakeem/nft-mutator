@@ -14,7 +14,7 @@ body{
 }
 
 .wallet-button-parent Button {
-    @apply text-white bg-turquoise rounded-lg font-roboto;
+    @apply text-white bg-turquoise rounded-lg font-roboto w-full;
 }
 
 .wallet-button-parent Button:hover {
