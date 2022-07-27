@@ -9,11 +9,34 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  if (req.method === 'GET') {
-    const pubkey: string = req.query.pubkey as string;
-    const key = new PublicKey(pubkey);
-    const nfts = await metaplex.nfts().findAllByOwner(key).run();
+  let { mintAddress } = req.query;
+  if (mintAddress == undefined) {
+    if (req.method === 'GET') {
+      const pubkey: string = req.query.pubkey as string;
+      const key = new PublicKey(pubkey);
+      const nfts = await metaplex.nfts().findAllByOwner(key).run();
 
-    res.status(200).json({nfts:nfts});
+      res.status(200).json({ response: nfts });
+    }
   }
+  else {
+    const mintkey = new PublicKey(mintAddress);
+    if (req.method === 'GET') {
+      const pubkey: string = req.query.pubkey as string;
+      const key = new PublicKey(pubkey);
+      const nfts = await metaplex.nfts().findAllByOwner(key).run();
+      for (let i = 0; i < nfts.length; i++) {
+        const element = nfts[i];
+        console.log(element.mintAddress.toString());
+        if (element.mintAddress.toString() == mintAddress) {
+          const metadata = await fetch(element.uri.toString());
+          const data= await metadata.json()
+          res.status(200).json({ response: data });
+        }
+
+      }
+      
+    }
+  }
+  res.status(404).json({ found:false });
 }
