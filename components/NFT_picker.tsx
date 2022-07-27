@@ -1,14 +1,28 @@
 ////import styles from './../styles/Home.module.css'
-import type { NextPage } from 'next'
 import styles from './../styles/NFT_picker.module.css'
 
-const NFT_picker:NextPage = () => {
+//nft_dataArray set type
+export default function NFT_picker({ nft_dataArray }) {
+    return nft_dataArray ? nft_dataArray.map((nft) => <Get_NFT post={nft} />) : null;
+}
+
+function Get_NFT({ nft_data }) {
 
     return (
-        <div className={styles.border}>
-           
+        <div className="avatar">
+            <div className="w-24 rounded">
+                <img src={nft_data.url} />
+            </div>
         </div>
     );
 }
 
-export default NFT_picker
+//nft_data:nft_array
+
+/*
+
+<div className={ `${styles.border} flex flex-row justify-start content-center items-center	`}>
+           
+        </div>
+
+*/
