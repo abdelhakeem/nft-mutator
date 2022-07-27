@@ -19,5 +19,6 @@
 .imgT{
     height: 180px;
     width: 190px;
+    border: 2px solid white;
     border-radius: 10%;
 }
