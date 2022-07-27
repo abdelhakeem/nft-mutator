@@ -1,15 +1,23 @@
 .border{
-    border: 5px solid #000;
+    background-color:  rgba(55, 55, 55, 0.5);
     height: 220px;
     width: 1200px;
     margin: auto;
     overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
 }
 
 .test{
-    border: 1px solid red;
     height: 180px;
     width: 190px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.imgT{
+    height: 180px;
+    width: 190px;
+    border-radius: 10%;
 }
