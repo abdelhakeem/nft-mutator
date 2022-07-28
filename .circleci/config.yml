@@ -1,0 +1,16 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@4.7
+
+workflows:
+  lint_and_build_app:
+    jobs:
+      - node/run:
+          version: '16.10'
+          pkg-manager: yarn
+          yarn-run: lint
+      - node/run:
+          version: '16.10'
+          pkg-manager: yarn
+          yarn-run: build
