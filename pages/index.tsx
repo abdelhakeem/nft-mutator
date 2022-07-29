@@ -1,7 +1,23 @@
 import type { NextPage } from 'next'
-import {WalletMultiButton} from "@solana/wallet-adapter-react-ui";
+import { useWallet } from '@solana/wallet-adapter-react'
+import { useRouter } from 'next/router'
+import { useWalletModal } from '@solana/wallet-adapter-react-ui'
 
 const Home: NextPage = () => {
+  const { publicKey } = useWallet()
+  const walletModal = useWalletModal()
+  const router = useRouter()
+
+  const handleGetStarted = () => {
+    if (publicKey) {
+      // If user's wallet is connected navigate to user NFT's
+      router.push('/nft')
+    } else {
+      // Show connect wallet modal
+      walletModal.setVisible(true)
+    }
+  }
+
   return (
     <div className='absolute top-0 left-0 w-full h-full overflow-hidden flex'>
       {/* Landing Page Bg Circles */}
@@ -53,10 +69,10 @@ const Home: NextPage = () => {
       {/* Landing Page backdrop */}
       <div className='absolute top-0 left-0 w-full h-full backdrop-bg'></div>
       {/* Landing Page Content */}
-      <div className='relative z-10 self-center ml-2 sm:ml-6 md:ml-15 lg:ml-40 p-5'>
+      <div className='relative z-50 self-center ml-2 sm:ml-6 md:ml-15 lg:ml-40 p-5'>
         <h1 className='font-bold text-white text-7xl'>Manage your <span className='landing-hero-text'>NFT</span>&apos;s</h1>
         <p className='font-normal text-2xl my-10 max-w-xl'>Load, display and update your metaplex NFT&apos;s metadata in few steps</p>
-        <button className="btn btn-wide btn-active btn-primary rounded-full">Get Started</button>
+        <button onClick={handleGetStarted} className="btn btn-wide btn-active btn-primary rounded-full">Get Started</button>
       </div>
     </div>
   )

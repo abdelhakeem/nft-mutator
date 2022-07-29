@@ -9,10 +9,10 @@ const Navbar = () => {
     const {connected} = useWallet()
 
     return (
-        <div className="relative drawer w-full z-50">
-            <input id="side-drawer" type="checkbox" className="drawer-toggle"/>
+        <div className="relative drawer w-full">
+            <input id="side-drawer" type="checkbox" className="drawer-toggle z-50"/>
 
-            <div className="flex drawer-content w-full justify-between h-20 pt-8 container mx-auto" style={{overflow: "visible"}}>
+            <div className="flex drawer-content w-full justify-between h-20 pt-8 container mx-auto !z-50" style={{overflow: "visible"}}>
                 <a className="relative w-1/3 md:w-[15%]">
                     <Image src="/NFTMutator_logo.svg" layout="fill" alt='logo'></Image>
                 </a>
