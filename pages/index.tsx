@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <path d="M197.174 34.291C248.551 48.2576 309.082 52.2731 332.07 80.359C355.058 108.445 340.503 160.601 319.892 196.09C299.697 231.704 273.495 251.083 236.223 259.367C199.184 267.93 151.539 265.957 103.659 234.471C55.7787 202.985 8.07961 142.113 1.08795 93.2122C-6.08785 44.4645 27.6755 7.96809 65.6006 1.97125C103.478 -4.45769 145.749 19.8922 197.174 34.291Z" fill="#EB54BC" fill-opacity="0.8"/>
         </svg>
       </div>
-      <div className='absolute top-0 right-0 z-5'>
+      <div className='absolute top-0 right-0 z-5 hero-right-circle'>
         <svg width="767" height="787" viewBox="0 0 767 787" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="575.723" cy="211.723" r="575" transform="rotate(-20.9744 575.723 211.723)" fill="url(#paint0_radial_1_190)"/>
         <defs>
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         <path d="M197.174 34.2911C248.551 48.2577 309.082 52.2732 332.07 80.3591C355.058 108.445 340.503 160.602 319.892 196.09C299.697 231.704 273.495 251.083 236.223 259.367C199.184 267.93 151.539 265.957 103.659 234.471C55.7787 202.985 8.07961 142.113 1.08795 93.2123C-6.08785 44.4646 27.6755 7.96818 65.6006 1.97134C103.478 -4.4576 145.749 19.8923 197.174 34.2911Z" fill="#02DC85" fill-opacity="0.8"/>
         </svg>
       </div> 
-      <div className='absolute bottom-0 left-0 z-5'>
+      <div className='absolute bottom-0 left-0 z-5 hero-left-circle'>
         <svg width="699" height="415" viewBox="0 0 699 415" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M621.36 287.977C668.44 401.555 694.204 563.079 698.652 772.549C703.1 982.019 621.797 1028.85 454.744 913.042C287.69 797.234 110.662 698.833 -76.3402 617.84C-263.342 536.847 -289.828 401.858 -155.798 212.873C-21.7677 23.8876 129.496 -39.2356 297.994 23.5029C466.491 86.2414 574.28 174.4 621.36 287.977Z" fill="url(#paint0_radial_1_186)"/>
         <defs>
@@ -53,10 +53,10 @@ const Home: NextPage = () => {
       {/* Landing Page backdrop */}
       <div className='absolute top-0 left-0 w-full h-full backdrop-bg'></div>
       {/* Landing Page Content */}
-      <div className='relative z-50 self-center ml-40'>
-        <h1 className='font-bold text-7xl'>Manage your <span className='landing-hero-text'>NFT</span>'s</h1>
+      <div className='relative z-10 self-center ml-2 sm:ml-10 md:ml-15 lg:ml-40 p-5'>
+        <h1 className='font-bold text-white text-7xl'>Manage your <span className='landing-hero-text'>NFT</span>'s</h1>
         <p className='font-normal text-2xl my-10 max-w-xl'>Load, display and update your metaplex NFT s metadata in few steps</p>
-        <button className="btn btn-active btn-primary rounded-full">Get Started</button>
+        <button className="btn btn-wide btn-active btn-primary rounded-full">Get Started</button>
       </div>
     </div>
   )

@@ -50,3 +50,9 @@ body {
   background-clip: text;
   text-fill-color: transparent;
 }
+
+@media (max-width: 1050px) {
+  .hero-right-circle {
+    width: 50%;
+  }
+}
