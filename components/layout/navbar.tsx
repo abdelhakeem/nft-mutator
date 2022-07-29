@@ -9,7 +9,7 @@ const Navbar = () => {
     const {connected} = useWallet()
 
     return (
-        <div className="drawer w-full">
+        <div className="relative drawer w-full z-50">
             <input id="side-drawer" type="checkbox" className="drawer-toggle"/>
 
             <div className="flex drawer-content w-full justify-between h-20 pt-8 container mx-auto" style={{overflow: "visible"}}>
