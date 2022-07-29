@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import Image from 'next/image'
+import {WalletMultiButton} from "@solana/wallet-adapter-react-ui";
 
 const Home: NextPage = () => {
   return (
@@ -56,6 +56,7 @@ const Home: NextPage = () => {
       <div className='relative z-50 self-center ml-40'>
         <h1 className='font-bold text-7xl'>Manage your <span className='landing-hero-text'>NFT</span>'s</h1>
         <p className='font-normal text-2xl my-10 max-w-xl'>Load, display and update your metaplex NFT s metadata in few steps</p>
+        <button className="btn btn-active btn-primary rounded-full">Get Started</button>
       </div>
     </div>
   )
