@@ -1,8 +1,9 @@
 import type { NextPage } from 'next'
+import Image from 'next/image'
 
 const Home: NextPage = () => {
   return (
-    <div className='absolute top-0 left-0 w-full h-full overflow-hidden'>
+    <div className='absolute top-0 left-0 w-full h-full overflow-hidden flex'>
       {/* Landing Page Bg Circles */}
       <div className='absolute top-20 left-0 blur-2xl z-5'>
         <svg width="94" height="184" viewBox="0 0 94 184" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,6 +52,10 @@ const Home: NextPage = () => {
       </div>
       {/* Landing Page backdrop */}
       <div className='absolute top-0 left-0 w-full h-full backdrop-bg'></div>
+      {/* Landing Page Content */}
+      <div className='relative z-50 self-center ml-40'>
+        <h1 className='font-bold text-7xl'>Manage your <span className='landing-hero-text'>NFT</span>'s</h1>
+      </div>
     </div>
   )
 }

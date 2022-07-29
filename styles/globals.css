@@ -27,10 +27,26 @@ body {
 }
 
 .backdrop-bg {
-    background-color: rgba(0,0, 0, .85);
-    z-index: 10;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 10;
 }
 
 .center-circle {
-    transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.landing-hero-text {
+  background: linear-gradient(
+    90deg,
+    #7c1dc1 0%,
+    #eb54bc 18.58%,
+    #0fb6ca 37.63%,
+    #67d8de 52.96%,
+    #02dc85 67.82%,
+    #fcd757 88.72%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
