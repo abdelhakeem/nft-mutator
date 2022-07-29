@@ -53,7 +53,7 @@ const Home: NextPage = () => {
       {/* Landing Page backdrop */}
       <div className='absolute top-0 left-0 w-full h-full backdrop-bg'></div>
       {/* Landing Page Content */}
-      <div className='relative z-10 self-center ml-2 sm:ml-10 md:ml-15 lg:ml-40 p-5'>
+      <div className='relative z-10 self-center ml-2 sm:ml-6 md:ml-15 lg:ml-40 p-5'>
         <h1 className='font-bold text-white text-7xl'>Manage your <span className='landing-hero-text'>NFT</span>'s</h1>
         <p className='font-normal text-2xl my-10 max-w-xl'>Load, display and update your metaplex NFT s metadata in few steps</p>
         <button className="btn btn-wide btn-active btn-primary rounded-full">Get Started</button>
