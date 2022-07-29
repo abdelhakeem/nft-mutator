@@ -14,7 +14,7 @@ const Navbar = () => {
 
             <div className="flex drawer-content w-full justify-between h-20 pt-8 container mx-auto" style={{overflow: "visible"}}>
                 <a className="relative w-1/3 md:w-[15%]">
-                    <Image src="/NFTMutator_logo.svg" layout="fill"></Image>
+                    <Image src="/NFTMutator_logo.svg" layout="fill" alt='logo'></Image>
                 </a>
 
                 <div className="justify-center gap-8 items-center wallet-button-parent hidden md:flex">
@@ -24,7 +24,7 @@ const Navbar = () => {
                 </div>
 
                 <label htmlFor="side-drawer" className="md:hidden relative w-6 cursor-pointer">
-                    <Image src="/menu.svg" layout="fill"></Image>
+                    <Image src="/menu.svg" layout="fill" alt='menu'></Image>
                 </label>
             </div>
 
