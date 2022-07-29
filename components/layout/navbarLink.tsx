@@ -12,7 +12,7 @@ const NavbarLink = ({text, href}: NavbarLinkProps) => {
 
     return (
         <Link href={href}>
-            <a className="w-32 flex cursor-pointer justify-center items-center h-full bg-back text-white transition-all duration-100
+            <a className="w-32 flex cursor-pointer justify-center items-center h-full text-white transition-all duration-100
              font-montserrat nav-link hover:font-bold"> {text} </a>
         </Link>
     )
