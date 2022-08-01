@@ -26,7 +26,13 @@ const NftEditor = ({ nft }: NftEditorProps) => {
           Advanced
         </a>
       </div>
-      {simple ? <NftEditorSimple nft={nft} /> : <NftEditorAdvanced nft={nft} />}
+      <div className="mt-4">
+        {simple ? (
+          <NftEditorSimple nft={nft} />
+        ) : (
+          <NftEditorAdvanced nft={nft} />
+        )}
+      </div>
     </div>
   );
 };
