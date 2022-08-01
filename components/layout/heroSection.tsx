@@ -1,4 +1,4 @@
-const HeroSection = ({onHandleGetStarted}) => {
+const HeroSection = ({onHandleGetStarted} : {onHandleGetStarted: any}) => {
   return (
     <main className="overflow-hidden py-5">
       <div className="flex w-full h-screen max-h-[85vh] relative">
