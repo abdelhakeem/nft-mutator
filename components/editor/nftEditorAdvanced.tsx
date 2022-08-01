@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {Nft} from "@metaplex-foundation/js";
 import dynamic from "next/dynamic";
 
@@ -63,6 +64,20 @@ const NftEditorAdvanced = ({nft}: NftEditorAdvancedProps) => {
         </div>
 
     )
+=======
+import { Nft } from "@metaplex-foundation/js";
+
+type NftEditorAdvancedProps = {
+  nft: Nft;
+};
+
+const NftEditorAdvanced = ({ nft }: NftEditorAdvancedProps) => {
+  return (
+    <div>
+      <h1>Advanced Editor</h1>
+    </div>
+  )
+>>>>>>> f2f1016 (Add NFT editor skeleton)
 };
 
 export default NftEditorAdvanced;
