@@ -1,4 +1,4 @@
-const HeroSection = () => {
+const HeroSection = ({onHandleGetStarted}) => {
   return (
     <main className="overflow-hidden py-5">
       <div className="flex w-full h-screen max-h-[85vh] relative">
@@ -15,7 +15,9 @@ const HeroSection = () => {
             Load, display and update your metaplex NFTs metadata in few steps
           </p>
           <div>
-            <button className="btn w-8/12 sm:w-fit px-6 bg-fuchsia-900 rounded-full text-lg font-normal">
+            <button 
+            onClick ={onHandleGetStarted}
+            className="btn w-8/12 sm:w-fit px-6 btn-secondary rounded-full text-lg font-normal">
               Get Started
             </button>
           </div>
