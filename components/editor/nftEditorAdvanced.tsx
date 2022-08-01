@@ -74,7 +74,7 @@ type NftEditorAdvancedProps = {
 const NftEditorAdvanced = ({ nft }: NftEditorAdvancedProps) => {
   return (
     <div>
-      <h1>Advanced Editor</h1>
+      <h1 className="text-xl font-bold">Advanced Editor</h1>
     </div>
   )
 >>>>>>> f2f1016 (Add NFT editor skeleton)
