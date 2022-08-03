@@ -29,3 +29,12 @@ body {
 #advanced-editor {
     @apply w-full rounded-3xl !important;
 }
+
+.button-violet-glow {
+    box-shadow: 0px 0px 20px rgba(124, 29, 193, 0.3);
+}
+
+.button-violet-glow:hover {
+    box-shadow: 0px 0px 20px rgba(124, 29, 193, 0.8);
+    background-color: #65139f;
+}
