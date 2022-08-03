@@ -60,7 +60,6 @@ const NftEditorAdvanced = ({nft}: NftEditorAdvancedProps) => {
                 <button onClick={onUpdate} className="button-violet-glow bg-violet rounded-full font-montserrat px-5 py-2 text-white w-52">Update</button>
             </div>
         </div>
-
     )
 };
 
