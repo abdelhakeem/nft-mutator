@@ -9,11 +9,11 @@ type nft_props = {
 
 let nftData: nft_props = { url: 'https://i.imgur.com/XyqQZQz.png', name: 'nft1', id: 'nft1', info_data: 'nft1' };
 
-const Mutate = (props:nft_props) => {
+const Mutate = () => {
     
     return (
         <div >
-            <NFT_selction></NFT_selction>
+            <NFT_selction  />
         </div>
     )
 }

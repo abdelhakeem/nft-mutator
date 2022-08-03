@@ -1,0 +1,34 @@
+.parentDiv{
+    justify-content: center;
+    align-items: left;
+    color:wheat;
+    width: 50%;
+    height: 150px;
+    background-color: whitesmoke;
+}
+
+.middle{
+    margin: auto;
+}
+
+.columnParent{
+    display: flex;
+    flex-direction: column;
+}
+
+.contentDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    color:wheat;
+    background-color: aqua;
+}
+
+.margin20{
+    margin-left: 40px;
+}
+
+.blank{
+    height: 10px;
+}
