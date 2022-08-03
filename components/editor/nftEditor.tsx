@@ -1,7 +1,12 @@
 import { Nft } from "@metaplex-foundation/js";
 import { useState } from "react";
-import NftEditorAdvanced from "./nftEditorAdvanced";
 import NftEditorSimple from "./nftEditorSimple";
+import dynamic from "next/dynamic";
+
+const NFTEditorAdvancedWithNoSSR = dynamic(
+    () => import('./nftEditorAdvanced'),
+    { ssr: false }
+)
 
 type NftEditorProps = {
   nft: Nft;
@@ -30,7 +35,7 @@ const NftEditor = ({ nft }: NftEditorProps) => {
         {simple ? (
           <NftEditorSimple nft={nft} />
         ) : (
-          <NftEditorAdvanced nft={nft} />
+          <NFTEditorAdvancedWithNoSSR nft={nft}/>
         )}
       </div>
     </div>
