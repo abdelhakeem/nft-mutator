@@ -32,7 +32,8 @@ const NftEditorAdvanced = ({nft}: NftEditorAdvancedProps) => {
     }
 
     return (
-        <div className="gradient-border-wrap p-0.5 rounded-3xl">
+        <div className="flex flex-col gap-10">
+            <div className="gradient-border-wrap p-0.5 rounded-3xl">
             <Ace
                 mode="json"
                 theme="monokai"
@@ -49,7 +50,13 @@ const NftEditorAdvanced = ({nft}: NftEditorAdvancedProps) => {
                     tabSize: 2,
                     useWorker: false,
                 }}/>
+            </div>
+
+            <div className="w-full flex items-center justify-center">
+                <button className="button-violet-glow bg-violet rounded-full font-montserrat px-5 py-2 text-white w-52">Update</button>
+            </div>
         </div>
+
     )
 };
 

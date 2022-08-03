@@ -17,15 +17,16 @@ const NftEditor = ({ nft }: NftEditorProps) => {
 
   return (
     <div className="container mx-auto">
-      <div className="tabs">
+      <h1 className="text-white text-3xl font-montserrat font-bold mb-5 mt-20">Metadata</h1>
+      <div className="tabs tabs-boxed bg-transparent flex gap-10 mb-10">
         <a
-          className={`tab tab-lg tab-lifted ${simple ? "tab-active" : ""}`}
+          className={`tab tab-lg ${simple ? "tab-active" : ""}`}
           onClick={() => setSimple(true)}
         >
           Simple
         </a>
         <a
-          className={`tab tab-lg tab-lifted ${simple ? "" : "tab-active"}`}
+          className={`tab tab-lg ${simple ? "" : "tab-active"}`}
           onClick={() => setSimple(false)}
         >
           Advanced
