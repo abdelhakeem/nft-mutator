@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import {Nft} from "@metaplex-foundation/js";
 import dynamic from "next/dynamic";
 
@@ -23,23 +22,17 @@ const Ace = dynamic(
 
 const NftEditorAdvanced = ({nft}: NftEditorAdvancedProps) => {
     const nftString = JSON.stringify(nft, null, '\t')
-    let lastUpdate = nftString
 
     const onLoad = () => {
         console.log('just loaded')
     }
 
-    const onUpdate = () => {
-        console.log(lastUpdate)
-    }
-
     const onChange = (e: any) => {
-        lastUpdate = e
+        console.log('updated nft', e)
     }
 
     return (
-        <div className="flex flex-col gap-10">
-            <div className="gradient-border-wrap p-0.5 rounded-3xl">
+        <div className="gradient-border-wrap p-0.5 rounded-3xl">
             <Ace
                 mode="json"
                 theme="monokai"
@@ -56,28 +49,8 @@ const NftEditorAdvanced = ({nft}: NftEditorAdvancedProps) => {
                     tabSize: 2,
                     useWorker: false,
                 }}/>
-            </div>
-
-            <div className="w-full flex items-center justify-center">
-                <button onClick={onUpdate} className="button-violet-glow bg-violet rounded-full font-montserrat px-5 py-2 text-white w-52">Update</button>
-            </div>
         </div>
-
     )
-=======
-import { Nft } from "@metaplex-foundation/js";
-
-type NftEditorAdvancedProps = {
-  nft: Nft;
-};
-
-const NftEditorAdvanced = ({ nft }: NftEditorAdvancedProps) => {
-  return (
-    <div>
-      <h1 className="text-xl font-bold">Advanced Editor</h1>
-    </div>
-  )
->>>>>>> f2f1016 (Add NFT editor skeleton)
 };
 
 export default NftEditorAdvanced;
