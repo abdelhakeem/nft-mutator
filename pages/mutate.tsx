@@ -1,4 +1,4 @@
-import NFT_Picker from '../components/nft_picker'
+import NFT_Picker from '../components/NFT_picker'
 import styles from './../styles/NFT_picker.module.css'
 
 type nft_props = {

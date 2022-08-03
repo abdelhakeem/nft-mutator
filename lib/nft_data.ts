@@ -1,4 +1,4 @@
-type nft_props = {
+export type nft_props = {
     url: string,
     name: string,
     id: string,
