@@ -1,5 +1,5 @@
 import { JsonMetadata, Nft } from "@metaplex-foundation/js";
-import { useEffect, useState } from "react";
+import { FormEventHandler, useEffect, useState } from "react";
 import NftEditorTextInput from "./nftEditorTextInput";
 
 type NftEditorSimpleProps = {
@@ -25,9 +25,12 @@ const NftEditorSimple = ({ nft }: NftEditorSimpleProps) => {
     setMetadata(newMetadata);
   };
 
+  const submitHandler: FormEventHandler = (e) => {
+    e.preventDefault();
+  };
+
   return (
-    <div>
-      <h1 className="text-xl font-bold">Simple Editor</h1>
+    <form onSubmit={submitHandler}>
       <NftEditorTextInput
         field="name"
         type="text"
@@ -63,7 +66,12 @@ const NftEditorSimple = ({ nft }: NftEditorSimpleProps) => {
         metadata={metadata}
         updateMetadata={handleUpdateMetadata}
       />
-    </div>
+      <div className="flex flex-row justify-center mt-8">
+        <button className="btn bg-violet text-white text-xl font-roboto capitalize rounded-full px-12">
+          Update
+        </button>
+      </div>
+    </form>
   );
 };
 
