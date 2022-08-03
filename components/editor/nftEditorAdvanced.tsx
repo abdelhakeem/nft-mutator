@@ -22,13 +22,18 @@ const Ace = dynamic(
 
 const NftEditorAdvanced = ({nft}: NftEditorAdvancedProps) => {
     const nftString = JSON.stringify(nft, null, '\t')
+    let lastUpdate = nftString
 
     const onLoad = () => {
         console.log('just loaded')
     }
 
+    const onUpdate = () => {
+        console.log(lastUpdate)
+    }
+
     const onChange = (e: any) => {
-        console.log('updated nft', e)
+        lastUpdate = e
     }
 
     return (
@@ -53,7 +58,7 @@ const NftEditorAdvanced = ({nft}: NftEditorAdvancedProps) => {
             </div>
 
             <div className="w-full flex items-center justify-center">
-                <button className="button-violet-glow bg-violet rounded-full font-montserrat px-5 py-2 text-white w-52">Update</button>
+                <button onClick={onUpdate} className="button-violet-glow bg-violet rounded-full font-montserrat px-5 py-2 text-white w-52">Update</button>
             </div>
         </div>
 
