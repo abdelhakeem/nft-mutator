@@ -1,5 +1,6 @@
 import { JsonMetadata, Nft } from "@metaplex-foundation/js";
 import { FormEventHandler, useEffect, useState } from "react";
+import NftEditorImageInput from "./nftEditorImageInput";
 import NftEditorTextInput from "./nftEditorTextInput";
 
 type NftEditorSimpleProps = {
@@ -63,6 +64,12 @@ const NftEditorSimple = ({ nft }: NftEditorSimpleProps) => {
         field="external_url"
         type="text"
         label="External URL"
+        metadata={metadata}
+        updateMetadata={handleUpdateMetadata}
+      />
+      <NftEditorImageInput
+        field="image"
+        label="Image"
         metadata={metadata}
         updateMetadata={handleUpdateMetadata}
       />
