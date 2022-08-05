@@ -15,7 +15,7 @@ const NFT_Selection = () => {
 
     return (
         <div className={styles.parentDiv +" "+styles.columnParent + " " + styles.middle}>
-            <div className={ styles.white}>
+            <div className="text-secondary-content text-xl		">
                 <h1><b>Selection</b></h1>
             </div>
             <div className={styles.blank}>
@@ -29,13 +29,13 @@ const NFT_Selection = () => {
                     </div>
                 </div>
                 <div className={styles.columnParent +" "+styles.margin20}>
-                    <div className="text-secondary-content">
-                        <h2><b>{nftData.id}</b></h2>
+                    <div className="text-secondary-content font-bold">
+                        {nftData.id}
                     </div>
-                    <div className='text-secondary'>
+                    <div className='text-secondary font-bold'>
                         {nftData.name}
                     </div>
-                    <div className='text-secondary-content'>
+                    <div className='text-secondary-content font-medium'>
                         {nftData.info_data}
                     </div>
                 </div>
