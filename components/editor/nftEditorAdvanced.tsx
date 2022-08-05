@@ -21,7 +21,8 @@ const Ace = dynamic(
     })
 
 const NftEditorAdvanced = ({nft}: NftEditorAdvancedProps) => {
-    const nftString = JSON.stringify(nft, null, '\t')
+    const nftString = JSON.stringify(nft.json, null, '\t')
+    let lastUpdate = nftString
 
     const onLoad = () => {
         console.log('just loaded')
