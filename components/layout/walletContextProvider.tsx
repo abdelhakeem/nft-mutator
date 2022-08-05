@@ -7,6 +7,8 @@ import {PhantomWalletAdapter} from "@solana/wallet-adapter-phantom";
 import {GlowWalletAdapter} from "@solana/wallet-adapter-glow";
 import {SlopeWalletAdapter} from "@solana/wallet-adapter-slope";
 import {SolflareWalletAdapter} from "@solana/wallet-adapter-wallets";
+import { selectCluster } from "../../redux/features/wallet/walletSlice";
+import { useAppSelector } from "../../hooks/useAppSelector";
 require('@solana/wallet-adapter-react-ui/styles.css');
 
 type WalletContextProviderProps = {
@@ -14,7 +16,7 @@ type WalletContextProviderProps = {
 }
 
 const WalletContextProvider = ({children}: WalletContextProviderProps) => {
-    const cluster = WalletAdapterNetwork.Devnet
+    const cluster = useAppSelector(selectCluster)
     const endpoint = clusterApiUrl(cluster)
 
     const wallets = useMemo(() => [
