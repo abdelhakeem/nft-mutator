@@ -1,4 +1,4 @@
-export default interface nft_data{
+export default interface nftDataType{
     url: string,
     name: string,
     id: string,
