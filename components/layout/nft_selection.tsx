@@ -7,33 +7,35 @@ type nft_props = {
     info_data: string
 }
 
-let nftData: nft_props = { url: 'https://i.imgur.com/XyqQZQz.png', name: 'nft1', id: 'nft1#3245', info_data: 'nft1 info data in white' };
+let nftData: nft_props = { url: './nft.png', name: 'nft1', id: 'nft1#3245', info_data: 'nft1 info data in white' };
+let nftData2: nft_props = { url: 'https://i.imgur.com/XyqQZQz.png', name: 'nft1', id: 'nft1#3245', info_data: 'nft1 info data in white' };
+
 
 const NFT_Selection = () => {
 
     return (
         <div className={styles.parentDiv +" "+styles.columnParent + " " + styles.middle}>
-            <div className={styles.margin20}>
+            <div className={ styles.white}>
                 <h1><b>Selection</b></h1>
             </div>
             <div className={styles.blank}>
             </div>
             <div className={styles.contentDiv}>
                 <div className={styles.margin20}>
-                    <div className="avatar">
+                    <div className={"avatar"+" "+ styles.border}>
                         <div className="w-24 rounded">
                             <img src={nftData.url} />
                         </div>
                     </div>
                 </div>
                 <div className={styles.columnParent +" "+styles.margin20}>
-                    <div>
-                        <h2>{nftData.id}</h2>
+                    <div className="text-secondary-content">
+                        <h2><b>{nftData.id}</b></h2>
                     </div>
-                    <div>
+                    <div className='text-secondary'>
                         {nftData.name}
                     </div>
-                    <div>
+                    <div className='text-secondary-content'>
                         {nftData.info_data}
                     </div>
                 </div>
