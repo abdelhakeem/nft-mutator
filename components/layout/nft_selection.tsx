@@ -1,9 +1,9 @@
 import styles from '../../styles/nft_selection.module.css';
+import nftDataType from '../../libs/nftDataType'
 
-//import nftDataType from '../../types/nftDataTypes.tsx';
-//let nftData:nftDataType;
+const NFT_Selection = (nftD:nftDataType) => {
 
-const NFT_Selection = ({nftData}) => {
+    const nftData = nftD;
 
     return (
         <div className={styles.parentDiv +" " + styles.middle + " " + "flex flex-col justify-center	"}>
