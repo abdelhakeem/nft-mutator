@@ -21,36 +21,46 @@ const Ace = dynamic(
     })
 
 const NftEditorAdvanced = ({nft}: NftEditorAdvancedProps) => {
-    const nftString = JSON.stringify(nft.json, null, '\t')
+    const nftString = nft?JSON.stringify(nft.json, null, '\t'):""
     let lastUpdate = nftString
+
+    const onUpdate = () => {
+        console.log('Updated value', lastUpdate)
+    }
 
     const onLoad = () => {
         console.log('just loaded')
     }
 
     const onChange = (e: any) => {
-        console.log('updated nft', e)
+        lastUpdate = e
     }
 
     return (
-        <div className="gradient-border-wrap p-0.5 rounded-3xl">
-            <Ace
-                mode="json"
-                theme="monokai"
-                name="advanced-editor"
-                onLoad={onLoad}
-                onChange={onChange}
-                fontSize={16}
-                showPrintMargin={true}
-                showGutter={true}
-                highlightActiveLine={true}
-                value={nftString}
-                setOptions={{
-                    showLineNumbers: true,
-                    tabSize: 2,
-                    useWorker: false,
-                }}/>
+        <div className="flex flex-col gap-10">
+            <div className="gradient-border-wrap p-0.5 rounded-3xl">
+                <Ace
+                    mode="json"
+                    theme="monokai"
+                    name="advanced-editor"
+                    onLoad={onLoad}
+                    onChange={onChange}
+                    fontSize={16}
+                    showPrintMargin={true}
+                    showGutter={true}
+                    highlightActiveLine={true}
+                    value={nftString}
+                    setOptions={{
+                        showLineNumbers: true,
+                        tabSize: 2,
+                        useWorker: false,
+                    }}/>
+            </div>
+            <div className="w-full flex items-center justify-center">
+                <button onClick={onUpdate} className="button-violet-glow bg-violet rounded-full font-montserrat px-5 py-2 text-white w-52">Update</button>
+            </div>
         </div>
+
     )
 };
 
