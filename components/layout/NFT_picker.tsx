@@ -1,4 +1,4 @@
-import styles from './../styles/NFT_picker.module.css'
+import styles from '../../styles/NFT_picker.module.css'
 
 export default function NFT_picker({ nft_dataArray }) {
     return nft_dataArray ? nft_dataArray.map((nft) => <Get_NFT nft_data={nft} />) : null;
@@ -6,7 +6,6 @@ export default function NFT_picker({ nft_dataArray }) {
 
 function Get_NFT({ nft_data }) {
 
-    console.log(typeof nft_data);
     console.log("nft_data: ", nft_data);
 
     return (
