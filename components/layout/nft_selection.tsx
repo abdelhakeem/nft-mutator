@@ -1,20 +1,13 @@
 import styles from '../../styles/nft_selection.module.css';
+import nftDataType from '../../types/nft_data';
 
-type nft_props = {
-    url: string,
-    name: string,
-    id: string,
-    info_data: string
-}
+let nftData:nftDataType;
 
-//let nftData2: nft_props = { url: 'https://i.imgur.com/XyqQZQz.png', name: 'nft1', id: 'nft1#3245', info_data: 'nft1 info data in white' };
-let nftData:nft_props;
-//className={styles.parentDiv +" "+ styles.columnParent + " " + styles.middle}
 const NFT_Selection = ({nftData}) => {
 
     return (
         <div className={styles.parentDiv +" " + styles.middle + " " + "flex flex-col justify-center	"}>
-            <div className="text-secondary-content text-xl		">
+            <div className="text-secondary-content text-xl">
                 <h1><b>Selection</b></h1>
             </div>
             <div className={styles.blank}>

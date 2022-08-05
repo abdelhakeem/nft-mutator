@@ -1,6 +1,6 @@
 .parentDiv{
     width: 50%;
-    height: 150px;
+    height: 180px;
 }
 
 .middle{
@@ -8,7 +8,7 @@
 }
 
 .contentDiv{
-    height: 120px;
+    height: 130px;
     background-color: rgb(49, 46, 46);
 }
 
