@@ -7,28 +7,27 @@ type nft_props = {
     info_data: string
 }
 
-let nftData: nft_props = { url: './nft.png', name: 'nft1', id: 'nft1#3245', info_data: 'nft1 info data in white' };
-let nftData2: nft_props = { url: 'https://i.imgur.com/XyqQZQz.png', name: 'nft1', id: 'nft1#3245', info_data: 'nft1 info data in white' };
-
-
-const NFT_Selection = () => {
+//let nftData2: nft_props = { url: 'https://i.imgur.com/XyqQZQz.png', name: 'nft1', id: 'nft1#3245', info_data: 'nft1 info data in white' };
+let nftData:nft_props;
+//className={styles.parentDiv +" "+ styles.columnParent + " " + styles.middle}
+const NFT_Selection = ({nftData}) => {
 
     return (
-        <div className={styles.parentDiv +" "+styles.columnParent + " " + styles.middle}>
+        <div className={styles.parentDiv +" " + styles.middle + " " + "flex flex-col justify-center	"}>
             <div className="text-secondary-content text-xl		">
                 <h1><b>Selection</b></h1>
             </div>
             <div className={styles.blank}>
             </div>
-            <div className={styles.contentDiv}>
+            <div className={styles.contentDiv + " flex flex-row items-center justify-start		"}>
                 <div className={styles.margin20}>
-                    <div className={"avatar"+" "+ styles.border}>
+                    <div className="avatar border border-solid ">
                         <div className="w-24 rounded">
                             <img src={nftData.url} />
                         </div>
                     </div>
                 </div>
-                <div className={styles.columnParent +" "+styles.margin20}>
+                <div className={styles.margin20 + " flex flex-col"}>
                     <div className="text-secondary-content font-bold">
                         {nftData.id}
                     </div>
