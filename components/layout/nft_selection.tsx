@@ -1,7 +1,7 @@
 import styles from '../../styles/nft_selection.module.css';
-import nftDataType from '../../types/nft_data';
 
-let nftData:nftDataType;
+//import nftDataType from '../../types/nftDataTypes.tsx';
+//let nftData:nftDataType;
 
 const NFT_Selection = ({nftData}) => {
 

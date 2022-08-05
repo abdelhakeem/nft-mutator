@@ -1,7 +1,7 @@
 import NFT_selction from '../../components/layout/nft_selection';
-import {nftDataType} from '../../types/nftDataType.ts';
+//import {nftDataType} from '../../types/nftDataType.ts';
 
-let nftData: nftDataType = { url: './nft.png', name: 'Nft1', id: 'Nft1#3245', info_data: 'some info data in white' };
+let nftData = { url: './nft.png', name: 'Nft1', id: 'Nft1#3245', info_data: 'some info data in white' };
 
 const Mutate = () => {
     
