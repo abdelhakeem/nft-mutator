@@ -25,3 +25,156 @@ body {
     @apply bg-transparent !important;
     box-shadow: 0px 0px 20px rgba(124, 29, 193, 0.5);
 }
+
+
+/*second page css*/
+
+.n-f-t-fetched-n-f-t-fetched {
+    @apply relative;
+
+    height: 1276px;
+    overflow: clip;
+    background-color: rgba(15, 15, 15, 1);
+  }
+
+  .n-f-t-fetched-rectangle18 {
+    @apply bg-black absolute top-0 left-0;
+    height: 1277px;
+  }
+
+  .n-f-t-fetched-rectangle14 {
+    @apply box-border absolute;
+    top: 670px;
+    left: 180px;
+    width: 1152px;
+    height: 276px;
+    border-radius: 10px;
+    background-color: rgba(55, 55, 55, 0.5);
+  }
+
+  .n-f-t-fetched-please-select-an-nft {
+    @apply inline text-3xl absolute text-center text-white;
+    top: 801px;
+    left: 516px;
+    width: 487px;
+    font-family: Roboto;
+    line-height: normal;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+  }
+
+  .n-f-t-fetched-your-nfts {
+    @apply inline font-semibold text-4xl absolute text-white;
+    top: 208px;
+    left: 177px;
+    font-family: Syne;
+    line-height: normal;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+  }
+
+  .n-f-t-fetched-selection {
+    @apply inline font-semibold text-4xl absolute text-white;
+    top: 603px;
+    left: 180px;
+    font-family: Syne;
+    line-height: normal;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+  }
+
+  .n-f-t-fetched-rectangle9 {
+    @apply box-border h-56 absolute;
+    top: 275px;
+    left: 180px;
+    width: 1152px;
+    border-radius: 10px;
+    background-color: rgba(55, 55, 55, 0.5);
+  }
+
+  .n-f-t-fetched-rectangle19 {
+    @apply bg-black absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 93.1%;
+  }
+  
+ 
+  .n-f-t-fetched-n-f-t-mutator {
+    @apply relative;
+    top: 29px;
+    left: 115px;
+  }
+
+  .n-f-t-fetched-n-f-t-text0 {
+    @apply inline font-extrabold text-2xl;
+    font-family: Montserrat;
+    line-height: normal;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+  }
+
+  .n-f-t-fetched-mutator-text1 {
+    @apply inline font-extrabold text-2xl text-white;
+    font-family: Montserrat;
+    line-height: normal;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+  }
+
+  .n-f-t-fetched-group5 {
+    @apply h-10 absolute w-48;
+    top: 24px;
+    left: 1197px;
+  }
+
+  .n-f-t-fetched-rectangle7 {
+    @apply border-solid border-2 box-border absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    border-color: rgba(124, 29, 193, 1);
+    border-radius: 72px;
+  }
+  
+
+  .n-f-t-fetched-ms-sdwb {
+    @apply inline font-semibold text-base absolute text-white;
+    top: 27.5%;
+    left: 30%;
+    right: 30.5%;
+    bottom: 25%;
+    font-family: Roboto;
+    line-height: normal;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+  }
+  .wand-magic-sparkles-solid1-wand-magic-sparkles-solid1 {
+  @apply h-10 absolute w-10;
+  top: 746px;
+  left: 740px;
+}
+
+.intersect-intersect {
+  @apply h-40 absolute w-40;
+  top: 306px;
+  left: 209px;
+}
+.blob3-blob3 {
+
+  width: 650px;
+  height: 650px;
+  mix-blend-mode: normal;
+  filter:blur(150px);
+}
+.blob2-blob2 {
+  @apply absolute;
+  top: -130.73px;
+  left: 631.08px;
+  width: 800px;
+  height: 800px;
+mix-blend-mode: normal;
+filter: blur(50px);
+}
