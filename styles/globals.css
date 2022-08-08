@@ -51,6 +51,14 @@ body {
   text-fill-color: transparent;
 }
 
+.landing-hero-btn {
+  transition: all .3s;
+}
+
+.landing-hero-btn:hover {
+  box-shadow: 0 0 30px #5014bd;
+}
+
 @media (max-width: 1050px) {
   .hero-right-circle {
     width: 50%;

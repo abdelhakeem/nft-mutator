@@ -72,7 +72,7 @@ const Home: NextPage = () => {
       <div className='relative z-10 self-center ml-2 sm:ml-6 md:ml-15 lg:ml-40 p-5'>
         <h1 className='font-bold text-white text-7xl'>Manage your <span className='landing-hero-text'>NFT</span>&apos;s</h1>
         <p className='font-normal text-2xl my-10 max-w-xl'>Load, display and update your metaplex NFT&apos;s metadata in few steps</p>
-        <button onClick={handleGetStarted} className="btn btn-wide btn-active btn-primary rounded-full">Get Started</button>
+        <button onClick={handleGetStarted} className="btn btn-wide btn-active btn-primary rounded-full landing-hero-btn">Get Started</button>
       </div>
     </div>
   )
