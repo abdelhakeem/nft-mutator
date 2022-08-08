@@ -10,11 +10,11 @@ const Navbar = () => {
 
     return (
                 <div className="flex w-full justify-between h-20 pt-8 container mx-auto" style={{overflow: "visible"}}>
-                    <a className="relative w-1/3 md:w-[15%]">
+                    <a className="relative w-1/3 md:w-[15%] navbar-anchor">
                         <Image src="/NFTMutator_logo.svg" layout="fill"></Image>
                     </a>
 
-                    <div className="justify-center gap-8 items-center wallet-button-parent hidden md:flex">
+                    <div className="justify-center gap-8 items-center wallet-button-parent hidden md:flex navbar-container">
                         { connected ? <NavbarLink href="/mutate" text="mutate"></NavbarLink> : null}
                         <ClusterPickerWeb/>
                         <WalletMultiButton/>
