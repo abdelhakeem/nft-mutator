@@ -16,6 +16,7 @@ const NFT_Selection = (nftData:nftDataType) => {
                         </div>
                     </div>
                 </div>
+
                 <div className={styles.margin20 + " flex flex-col gap-1"}>
                     <div className="text-secondary-content">
                         {nftData.id}
