@@ -1,33 +1,29 @@
 import styles from '../../styles/nft_selection.module.css';
 import nftDataType from '../../libs/nftDataType'
 
-const NFT_Selection = (nftD:nftDataType) => {
-
-    const nftData = nftD;
+const NFT_Selection = (nftData:nftDataType) => {
 
     return (
-        <div className={styles.parentDiv +" " + styles.middle + " " + "flex flex-col justify-center	"}>
-            <div className="text-secondary-content text-xl">
-                <h1><b>Selection</b></h1>
+        <div className={styles.parentDiv + " flex flex-col justify-center gap-5"}>
+            <div className="text-secondary-content text-3xl">
+                <h1 className="font-montserrat font-bold">Selection</h1>
             </div>
-            <div className={styles.blank}>
-            </div>
-            <div className={styles.contentDiv + " flex flex-row items-center justify-start		"}>
+            <div className={styles.contentDiv + " flex items-center justify-start"}>
                 <div className={styles.margin20}>
-                    <div className="avatar border border-solid ">
-                        <div className="w-24 rounded">
+                    <div className="avatar border border-solid rounded-lg">
+                        <div className="w-24">
                             <img src={nftData.url} />
                         </div>
                     </div>
                 </div>
-                <div className={styles.margin20 + " flex flex-col"}>
-                    <div className="text-secondary-content font-bold">
+                <div className={styles.margin20 + " flex flex-col gap-1"}>
+                    <div className="text-secondary-content">
                         {nftData.id}
                     </div>
-                    <div className='text-secondary font-bold'>
+                    <div className='text-secondary'>
                         {nftData.name}
                     </div>
-                    <div className='text-secondary-content font-medium'>
+                    <div className='text-secondary-content font-light'>
                         {nftData.info_data}
                     </div>
                 </div>

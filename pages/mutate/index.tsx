@@ -6,7 +6,7 @@ const Mutate = () => {
     let nftD:nftDataType = { url: './nft.png', name: 'Nft1', id: 'Nft1#3245', info_data: 'some info data in white' };
 
     return (
-        <div >
+        <div>
             <NFT_selction {...nftD}/>
         </div>
     )
