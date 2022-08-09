@@ -13,17 +13,30 @@ body {
   text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
 }
 
-/*.gradient-border-wrap {*/
-/*    background: linear-gradient(to right, #7C1DC1, #EB54BC, #67D8DE, #02DC85, #FCD757);*/
-/*}*/
+.gradient-border-wrap {
+    background: linear-gradient(-255deg, #7C1DC1, #EB54BC, #67D8DE, #02DC85, #FCD757);
+}
 
 .wallet-button-parent Button {
   @apply text-white px-12 bg-transparent rounded-full border border-violet border-solid font-roboto w-full;
 }
 
 .wallet-button-parent Button:hover {
-  @apply bg-transparent !important;
-  box-shadow: 0px 0px 20px rgba(124, 29, 193, 0.5);
+    @apply bg-transparent !important;
+    box-shadow: 0px 0px 20px rgba(124, 29, 193, 0.5);
+}
+
+#advanced-editor {
+    @apply w-full rounded-3xl !important;
+}
+
+.button-violet-glow {
+    box-shadow: 0px 0px 20px rgba(124, 29, 193, 0.3);
+}
+
+.button-violet-glow:hover {
+    box-shadow: 0px 0px 20px rgba(124, 29, 193, 0.8);
+    background-color: #65139f;
 }
 
 .backdrop-bg {
