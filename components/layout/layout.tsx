@@ -12,12 +12,10 @@ const Layout = ({children}: LayoutProps) => {
         <WalletContextProvider>
             <div className="drawer w-full">
                 <input id="side-drawer" type="checkbox" className="drawer-toggle"/>
-
                 <div className="drawer-content">
                     <Navbar></Navbar>
                     {children}
                 </div>
-
                 <SideDrawer/>
             </div>
         </WalletContextProvider>
