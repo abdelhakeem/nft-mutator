@@ -8,10 +8,18 @@ export default function NFT_picker({ nft_dataArray }) {
     console.log(nft_dataArray);
     let data = nft_dataArray[0];
 
-    return (
-        <div className="flex flex-row">
-            {nft_dataArray ? nft_dataArray.map((nft: nftDataType) => <NFT_modal nft_data={nft} />) : null}
-        </div>
-    )
+    if (nft_dataArray.length == 0) {
+        return (
+            <div className={styles.blank + " flex flex-row"}>
+                Hello bro, you have no NFTs.
+            </div>
+        )
+    } else {
+        return (
+            <div className="flex flex-row">
+                {nft_dataArray ? nft_dataArray.map((nft: nftDataType) => <NFT_modal nft_data={nft} />) : null}
+            </div>
+        )
+    }
 
 }
