@@ -9,9 +9,9 @@ const SecondPage = () => {
  // let nft_Array: dataArrayType = [];
 
   return (
-    <div className={styles.marginAuto + ' flex flex-col bg-primary'}>
-      <div className='bg-secondary text-lg	font-bold	text-white'>Your NFTs</div>
-      <div >
+    <div className={styles.marginAuto + ' flex flex-col'}>
+      <div className='text-lg	font-bold	text-white'>Your NFTs</div>
+      <div className={styles.contentBG}>
         <NFT_Picker nft_dataArray={nft_Array}/>
       </div>
     </div>

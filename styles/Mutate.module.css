@@ -1,6 +1,8 @@
 .marginAuto{
     width: 60%;
     margin:auto;
-    background-color: aqua;
 }
 
+.contentBG{
+    background-color: #37373780;
+}
