@@ -1,21 +1,13 @@
 .parentDiv{
-    width: 50%;
-    height: 180px;
-}
-
-.middle{
-    margin: auto;
+    @apply w-full container mx-auto;
 }
 
 .contentDiv{
-    height: 130px;
-    background-color: rgb(49, 46, 46);
+    @apply py-5 rounded-lg font-montserrat;
+    background-color: rgba(55, 55, 55, 0.5);
 }
 
 .margin20{
     margin-left: 40px;
 }
 
-.blank{
-    height: 10px;
-}
