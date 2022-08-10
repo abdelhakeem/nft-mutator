@@ -1,8 +1,6 @@
-export type nft_props = {
+export default interface nftDataType{
     url: string,
     name: string,
     id: string,
     info_data: string
 }
-
-type nft_array = Array<nft_props>;
