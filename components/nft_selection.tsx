@@ -1,5 +1,5 @@
-import styles from '../../styles/nft_selection.module.css';
-import nftDataType from '../../libs/nftDataType'
+import styles from '../styles/nft_selection.module.css';
+import nftDataType from '../libs/nftDataType'
 
 const NFT_Selection = (nftData:nftDataType) => {
 

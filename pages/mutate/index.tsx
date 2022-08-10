@@ -1,4 +1,4 @@
-import NFT_selction from '../../components/layout/nft_selection';
+import NFT_selction from '../../components/nft_selection';
 import nftDataType from '../../libs/nftDataType';
 
 
