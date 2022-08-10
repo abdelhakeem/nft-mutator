@@ -1,0 +1,13 @@
+.parentDiv{
+    @apply w-full container mx-auto;
+}
+
+.contentDiv{
+    @apply py-5 rounded-lg font-montserrat;
+    background-color: rgba(55, 55, 55, 0.5);
+}
+
+.margin20{
+    margin-left: 40px;
+}
+
