@@ -23,7 +23,7 @@ const Ace = dynamic(
 );
 
 const NftEditorAdvanced = ({ nft }: NftEditorAdvancedProps) => {
-  const [metadata, setMetadata] = useState({} as JsonMetadata);
+  const [metadata, setMetadata] = useState(null as JsonMetadata | null);
   const [status, setStatus] = useState("idle" as "idle" | StatusType);
   const [msg, setMsg] = useState("");
   const metaplex = useMetaplex();
@@ -33,6 +33,7 @@ const NftEditorAdvanced = ({ nft }: NftEditorAdvancedProps) => {
 
   useEffect(() => {
     setMetadata(nft.json);
+    setNFTString(JSON.stringify(nft.json, null, "\t"));
   }, [nft]);
 
   // the onUpdate method updates the metadata of the NFT
