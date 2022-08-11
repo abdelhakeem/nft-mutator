@@ -42,12 +42,9 @@ const NftEditorAdvanced = ({ nft }: NftEditorAdvancedProps) => {
       setMsg("Please connect your wallet to proceed");
       return;
     }
-    console.log(metadata);
     try {
       setStatus("info");
-
       setMsg("Uploading metadata...");
-      console.log(metadata);
       const { uri } = await metaplex.nfts().uploadMetadata(metadata).run();
       setMsg("Updating NFT...");
       const updatedNFT = await metaplex.nfts().update(nft, { uri }).run();
