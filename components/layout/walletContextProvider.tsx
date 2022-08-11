@@ -24,7 +24,7 @@ const WalletContextProvider = ({children}: WalletContextProviderProps) => {
         new GlowWalletAdapter(),
         new SlopeWalletAdapter(),
         new SolflareWalletAdapter(),
-    ], [cluster])
+    ], [])
 
     const onError = (error: any) => {console.log(error)}
 

@@ -33,7 +33,7 @@ const NftEditorAdvanced = ({ nft }: NftEditorAdvancedProps) => {
 
   useEffect(() => {
     setMetadata(nft.json);
-  }, []);
+  }, [nft]);
 
   // the onUpdate method updates the metadata of the NFT
   const onUpdate = async () => {

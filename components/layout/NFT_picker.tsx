@@ -14,7 +14,7 @@ export default function NFT_picker({ nft_dataArray }: { nft_dataArray: dataArray
     } else {
         return (
             <div className={styles.nft_picker + " flex flex-row flex-nowrap items-center overflow-auto carousel space-x-4"}>
-                {nft_dataArray ? nft_dataArray.map((nft: nftDataType,index) => <NFT_modal nft_data={nft} />) : null}
+                {nft_dataArray ? nft_dataArray.map((nft: nftDataType,index) => <NFT_modal key={index} nft_data={nft} />) : null}
             </div>
         )
     }

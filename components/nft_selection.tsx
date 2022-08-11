@@ -12,7 +12,7 @@ const NFT_Selection = (nftData:nftDataType) => {
                 <div className={styles.margin20}>
                     <div className="avatar border border-solid rounded-lg">
                         <div className="w-24">
-                            <img src={nftData.url} />
+                            <img src={nftData.url} alt="NFT Image" />
                         </div>
                     </div>
                 </div>
